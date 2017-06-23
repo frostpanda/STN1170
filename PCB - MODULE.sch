@@ -561,22 +561,6 @@ TQFP (PT) Package
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 <wire x1="-0.4" y1="0.7" x2="-0.4" y2="-0.7" width="0.127" layer="21"/>
 </package>
-<package name="TSX-3225">
-<description>TSX-3225 FOOTPRINT&lt;BR&gt;
-&lt;B&gt;UNTESTED&lt;/B&gt;</description>
-<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
-<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
-<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
-<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
-<smd name="1" x="-1.1" y="-0.85" dx="1.4" dy="1.09" layer="1"/>
-<smd name="2" x="1.1" y="-0.85" dx="1.4" dy="1.09" layer="1"/>
-<smd name="3" x="1.1" y="0.85" dx="1.4" dy="1.09" layer="1"/>
-<smd name="4" x="-1.1" y="0.85" dx="1.4" dy="1.09" layer="1"/>
-<rectangle x1="0.5" y1="0.35" x2="1.5" y2="1.15" layer="51"/>
-<rectangle x1="0.5" y1="-1.15" x2="1.5" y2="-0.35" layer="51"/>
-<rectangle x1="-1.5" y1="-1.15" x2="-0.5" y2="-0.35" layer="51"/>
-<rectangle x1="-1.5" y1="0.35" x2="-0.5" y2="1.15" layer="51"/>
-</package>
 </packages>
 <symbols>
 <symbol name="STN1170">
@@ -658,26 +642,6 @@ Diode with low voltage drop</description>
 <rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
 <pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-</symbol>
-<symbol name="CRYSTAL-GND">
-<description>&lt;h3&gt;Crystal with Ground pin&lt;/h3&gt;</description>
-<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="1.778" x2="-1.016" y2="0" width="0.254" layer="94"/>
-<text x="1.524" y="-1.524" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
-<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
-<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
-<wire x1="-1.016" y1="0" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
-<pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<wire x1="0" y1="-2.8" x2="0" y2="-1.6" width="0.1524" layer="94"/>
-<text x="-1.27" y="-1.524" size="1.778" layer="95" font="vector" align="top-right">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -764,28 +728,6 @@ Multiprotocol OBD to UART interpreter&lt;br&gt;&lt;br&gt;
 <connects>
 <connect gate="G$1" pin="+" pad="1"/>
 <connect gate="G$1" pin="-" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TSX-3225" prefix="Y">
-<description>EPSON TIMING&lt;BR&gt;&lt;BR&gt;
-
-CRYSTAL, TSX-3225 FAMILY&lt;BR&gt;&lt;BR&gt;
-
-&lt;B&gt;CRYSTAL DIMENSION 3,2 X 2,5 MM&lt;/B&gt;</description>
-<gates>
-<gate name="G$1" symbol="CRYSTAL-GND" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="TSX-3225">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="3"/>
-<connect gate="G$1" pin="3" pad="2 4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2676,6 +2618,103 @@ Details see: &lt;a href="http://katalog.we-online.de/en/led/WL-SMCW?m"&gt;http:/
 </deviceset>
 </devicesets>
 </library>
+<library name="Goodies">
+<packages>
+<package name="TSX-3225-SOLDERING-IRON">
+<description>TSX-3225 FOOTPRINT&lt;BR&gt;
+&lt;B&gt;UNTESTED&lt;/B&gt;
+&lt;br&gt;&lt;br&gt;
+Rev. 1 -&gt; Dimension of a pads are the same, as in datasheet. Dimension: 1.4 x 1.15 &lt;br&gt;
+Rev. 2 -&gt; Bigger pads for easier soldering using solder iron. Dimension: 1.6 x 1.4 &lt;br&gt;</description>
+<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
+<smd name="1" x="-1.25" y="-1" dx="1.6" dy="1.4" layer="1"/>
+<smd name="2" x="1.25" y="-1" dx="1.6" dy="1.4" layer="1"/>
+<smd name="3" x="1.25" y="1" dx="1.6" dy="1.4" layer="1"/>
+<smd name="4" x="-1.25" y="1" dx="1.6" dy="1.4" layer="1"/>
+<rectangle x1="0.5" y1="0.35" x2="1.5" y2="1.15" layer="51"/>
+<rectangle x1="0.5" y1="-1.15" x2="1.5" y2="-0.35" layer="51"/>
+<rectangle x1="-1.5" y1="-1.15" x2="-0.5" y2="-0.35" layer="51"/>
+<rectangle x1="-1.5" y1="0.35" x2="-0.5" y2="1.15" layer="51"/>
+</package>
+<package name="TSX-3225">
+<description>TSX-3225 FOOTPRINT&lt;BR&gt;
+&lt;B&gt;TESTED&lt;/B&gt;
+&lt;br&gt;&lt;br&gt;
+Rev. 1 -&gt; Dimension of a pads are the same, as in datasheet. Dimension: 1.4 x 1.15 &lt;br&gt;</description>
+<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
+<smd name="1" x="-1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="2" x="1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="3" x="1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="4" x="-1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
+<rectangle x1="0.5" y1="0.35" x2="1.5" y2="1.15" layer="51"/>
+<rectangle x1="0.5" y1="-1.15" x2="1.5" y2="-0.35" layer="51"/>
+<rectangle x1="-1.5" y1="-1.15" x2="-0.5" y2="-0.35" layer="51"/>
+<rectangle x1="-1.5" y1="0.35" x2="-0.5" y2="1.15" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CRYSTAL-GND">
+<description>&lt;h3&gt;Crystal with Ground pin&lt;/h3&gt;</description>
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="0" width="0.254" layer="94"/>
+<text x="1.524" y="-1.524" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
+<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<wire x1="-1.016" y1="0" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<wire x1="0" y1="-2.8" x2="0" y2="-1.6" width="0.1524" layer="94"/>
+<text x="-1.27" y="-1.524" size="1.778" layer="95" font="vector" align="top-right">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TSX-3225" prefix="Y">
+<description>EPSON TIMING&lt;BR&gt;&lt;BR&gt;
+
+CRYSTAL, TSX-3225 FAMILY&lt;BR&gt;&lt;BR&gt;
+
+&lt;B&gt;CRYSTAL DIMENSION 3,2 X 2,5 MM&lt;/B&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL-GND" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="STANDARDPADS" package="TSX-3225">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="3" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="BIGGERPADS" package="TSX-3225-SOLDERING-IRON">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="3" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2746,7 +2785,7 @@ Details see: &lt;a href="http://katalog.we-online.de/en/led/WL-SMCW?m"&gt;http:/
 <part name="R16" library="SparkFun-Resistors" deviceset="0.75OHM" device="-0805-1/4W-1%" value="330"/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="0.33UF/330NF" device="-0805-50V-10%" value="0.1uF"/>
-<part name="Y1" library="prywatne" deviceset="TSX-3225" device=""/>
+<part name="Y1" library="Goodies" deviceset="TSX-3225" device="BIGGERPADS"/>
 <part name="D1" library="EAGLE-COLOR_LED-rev17b" deviceset="WL-SMCW" device="-150120RS75000-R" value="STATUS-LED"/>
 <part name="D2" library="EAGLE-COLOR_LED-rev17b" deviceset="WL-SMCW" device="-150120YS75000-Y" value="UART-LED"/>
 <part name="D3" library="EAGLE-COLOR_LED-rev17b" deviceset="WL-SMCW" device="-150120GS75000-G" value="OBD-LED"/>
