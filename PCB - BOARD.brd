@@ -1944,7 +1944,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="U10" library="prywatne" package="SOIC-8" value="TH8056-KDC-A8" x="36.5001" y="12.93023125" smashed="yes" rot="R90">
 <attribute name="VALUE" x="36.9701" y="10.53023125" size="0.635" layer="27" rot="R90"/>
 </element>
-<element name="U15" library="SparkFun-IC-Power" package="TO-252" value="LD1086DT50TR" x="6.0492" y="46.2996" smashed="yes" rot="R90">
+<element name="U15" library="SparkFun-IC-Power" package="TO-252" value="MC7805" x="6.0492" y="46.2996" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="VREG-12370" x="6.0492" y="46.2996" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="8.5892" y="51.3796" size="1.27" layer="27" rot="R180"/>
 </element>
@@ -1952,7 +1952,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="CP1202N" library="prywatne" package="QFN20" value="CP2102N" x="59.5" y="19.4999" smashed="yes" rot="R180">
 <attribute name="VALUE" x="59.5" y="21.5999" size="0.6096" layer="27" rot="R180" align="top-center"/>
 </element>
-<element name="U19" library="prywatne" package="SOT223" value="ZLDO1117G33TA" x="6.350771875" y="3.60311875" smashed="yes" rot="R270">
+<element name="U19" library="prywatne" package="SOT223" value="MCP1703" x="6.350771875" y="3.60311875" smashed="yes" rot="R270">
 <attribute name="VALUE" x="6.160271875" y="4.68261875" size="0.4064" layer="27" rot="R270"/>
 </element>
 <element name="U9" library="SparkFun-IC-Power" package="SOT223" value="LM317" x="65.35003125" y="46.202040625" smashed="yes" rot="R270">
@@ -2038,22 +2038,22 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <attribute name="PROD_ID" value="CAP-11625" x="1.9939" y="42.6641" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="5.5499" y="37.7111" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="C19" library="SparkFun-Capacitors" package="0805" value="10uF" x="10.0505" y="45.3993" smashed="yes">
+<element name="C19" library="SparkFun-Capacitors" package="0805" value="0.33uF" x="10.0505" y="45.3993" smashed="yes">
 <attribute name="NAME" x="12.100690625" y="44.802459375" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-11625" x="10.0505" y="45.3993" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="10.0505" y="44.5103" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="C21" library="SparkFun-Capacitors" package="0805" value="4.7 uF MLCC" x="1.10046875" y="2.050009375" smashed="yes" rot="R90">
+<element name="C21" library="SparkFun-Capacitors" package="0805" value="1uF" x="1.10046875" y="2.050009375" smashed="yes" rot="R90">
 <attribute name="NAME" x="3.249990625" y="2.66146875" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-11625" x="1.10046875" y="2.050009375" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="1.98946875" y="2.050009375" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="C17" library="SparkFun-Capacitors" package="0805" value="10uF" x="10.0511" y="47.2002" smashed="yes">
+<element name="C17" library="SparkFun-Capacitors" package="0805" value="0.1uF" x="10.0511" y="47.2002" smashed="yes">
 <attribute name="NAME" x="12.1497" y="47.79828125" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-11625" x="10.0511" y="47.2002" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="10.0511" y="46.3112" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="C18" library="SparkFun-Capacitors" package="0805" value="4.7uF MLCC" x="1.1003" y="5.2001" smashed="yes" rot="R270">
+<element name="C18" library="SparkFun-Capacitors" package="0805" value="1uF" x="1.1003" y="5.2001" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.2499" y="4.5893" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-11625" x="1.1003" y="5.2001" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="0.2113" y="5.2001" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>

@@ -7371,8 +7371,8 @@ Details see: &lt;a href="http://katalog.we-online.de/en/led/WL-SMCW?m"&gt;http:/
 <part name="GND111" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND112" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND113" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="U15" library="SparkFun-IC-Power" deviceset="V_REG_78XX" device="7812" value="LD1086DT50TR"/>
-<part name="U19" library="prywatne" deviceset="UA78M33CDCYR" device="" value="ZLDO1117G33TA"/>
+<part name="U15" library="SparkFun-IC-Power" deviceset="V_REG_78XX" device="7812" value="MC7805"/>
+<part name="U19" library="prywatne" deviceset="UA78M33CDCYR" device="" value="MCP1703"/>
 <part name="GND114" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND115" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND116" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -7410,10 +7410,10 @@ Details see: &lt;a href="http://katalog.we-online.de/en/led/WL-SMCW?m"&gt;http:/
 <part name="R12" library="SparkFun-Resistors" deviceset="0.3OHM" device="-0805-1/8W-1%" value="1k"/>
 <part name="R14" library="SparkFun-Resistors" deviceset="0.3OHM" device="-0805-1/8W-1%" value="1240"/>
 <part name="C16" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" value="10nF  100V"/>
-<part name="C19" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" value="10uF"/>
-<part name="C21" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" value="4.7 uF MLCC"/>
-<part name="C17" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" value="10uF"/>
-<part name="C18" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" value="4.7uF MLCC"/>
+<part name="C19" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" value="0.33uF"/>
+<part name="C21" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" value="1uF"/>
+<part name="C17" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" value="0.1uF"/>
+<part name="C18" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" value="1uF"/>
 <part name="R15" library="SparkFun-Resistors" deviceset="0.3OHM" device="-0805-1/8W-1%" value="280"/>
 <part name="R16" library="SparkFun-Resistors" deviceset="0.3OHM" device="-0805-1/8W-1%" value="120"/>
 <part name="R8" library="SparkFun-Resistors" deviceset="0.3OHM" device="-0805-1/8W-1%" value="10k"/>
