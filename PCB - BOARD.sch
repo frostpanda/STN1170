@@ -3886,27 +3886,6 @@ body thickness: 1.47mm</description>
 <wire x1="4.45" y1="1.75" x2="4.45" y2="-1.74" width="0.2032" layer="21"/>
 <wire x1="-4.45" y1="-1.75" x2="4.45" y2="-1.75" width="0.2032" layer="21"/>
 </package>
-<package name="SOT223">
-<description>&lt;b&gt;SOT-223&lt;/b&gt;</description>
-<wire x1="3.2766" y1="1.651" x2="3.2766" y2="-1.651" width="0.2032" layer="21"/>
-<wire x1="3.2766" y1="-1.651" x2="-3.2766" y2="-1.651" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="-1.651" x2="-3.2766" y2="1.651" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="1.651" x2="3.2766" y2="1.651" width="0.2032" layer="21"/>
-<smd name="1" x="-2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="2" x="0" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="3" x="2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
-<text x="-0.8255" y="4.5085" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.0795" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-</package>
 <package name="SOD-523F">
 <wire x1="-0.65" y1="0.45" x2="0.3" y2="0.45" width="0.127" layer="51"/>
 <wire x1="0.3" y1="0.45" x2="0.65" y2="0.45" width="0.127" layer="51"/>
@@ -4191,20 +4170,6 @@ Schematic for SO14 and HVSON14 package
 <text x="-10.16" y="13.208" size="1.778" layer="95">&gt;Name</text>
 <text x="-10.16" y="-15.24" size="1.778" layer="96">&gt;Value</text>
 </symbol>
-<symbol name="78XX">
-<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="5.08" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="-5.08" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
-<text x="2.54" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.032" y="-4.318" size="1.524" layer="95">GND</text>
-<text x="-4.445" y="-0.635" size="1.524" layer="95">IN</text>
-<text x="0.635" y="-0.635" size="1.524" layer="95">OUT</text>
-<pin name="IN" x="-7.62" y="0" visible="off" length="short" direction="in"/>
-<pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="in" rot="R90"/>
-<pin name="OUT" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
 <symbol name="BAT54XV2">
 <description>&lt;h3&gt; Schottky Diode&lt;/h3&gt;
 Diode with low voltage drop</description>
@@ -4435,23 +4400,6 @@ between a Controller Area Network (CAN) protocol controller and the physical two
 <connect gate="G$1" pin="TXD2" pad="6"/>
 <connect gate="G$1" pin="VCC" pad="3"/>
 <connect gate="G$1" pin="VIO" pad="11"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="UA78M33CDCYR" prefix="U">
-<gates>
-<gate name="G$1" symbol="78XX" x="0" y="0" addlevel="must"/>
-</gates>
-<devices>
-<device name="" package="SOT223">
-<connects>
-<connect gate="G$1" pin="GND" pad="2 4"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7161,6 +7109,47 @@ Voltage Regulators</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="ZLODO1117" prefix="U">
+<description>&lt;b&gt;ZLODO1117&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;i&gt;Avaiable in DPAK (TO-252) and SOT-223 package&lt;/i&gt;&lt;br&gt;&lt;br&gt;
+
+ZLDO1117 is a low dropout positive adjustable or fixed-mode&lt;br&gt;
+regulator with 1A output current capability.&lt;br&gt;&lt;br&gt;
+The ZLDO1117 has a 2% tolerance across the industrial temperature&lt;br&gt;
+range and is guaranteed to have lower than 1.2V dropout at full load&lt;br&gt;
+current making it ideal to provide well-regulated outputs of 1.2V to&lt;br&gt;
+5.0V with input supply voltages up to 18V.&lt;br&gt;&lt;br&gt;
+The ZLDO1117 is ideally suited to provide well-regulated supplies for&lt;br&gt;
+low voltage IC applications such as high-speed bus termination and&lt;br&gt;
+low current 3.3V logic supply across the whole industrial temperature&lt;br&gt;
+range.</description>
+<gates>
+<gate name="G$1" symbol="78XX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT223" package="SOT223">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DPAK" package="TO-252">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -7257,7 +7246,7 @@ Voltage Regulators</description>
 <part name="GND112" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND113" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U15" library="Goodies" deviceset="NCP1117" device="DPAK" value="NCP1117"/>
-<part name="U19" library="prywatne" deviceset="UA78M33CDCYR" device="" value="MCP1703"/>
+<part name="U19" library="Goodies" deviceset="ZLODO1117" device="SOT223" value="ZLDO1117"/>
 <part name="GND114" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND115" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND116" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -7296,9 +7285,9 @@ Voltage Regulators</description>
 <part name="R14" library="SparkFun-Resistors" deviceset="0.3OHM" device="-0805-1/8W-1%" value="1240"/>
 <part name="C16" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" value="10nF  100V"/>
 <part name="C19" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" value="10uF"/>
-<part name="C21" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" value="1uF"/>
+<part name="C21" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" value="4.7uF  MLCC"/>
 <part name="C17" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" value="4.7uF"/>
-<part name="C18" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" value="1uF"/>
+<part name="C18" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" value="4.7uF  MLCC"/>
 <part name="R15" library="SparkFun-Resistors" deviceset="0.3OHM" device="-0805-1/8W-1%" value="280"/>
 <part name="R16" library="SparkFun-Resistors" deviceset="0.3OHM" device="-0805-1/8W-1%" value="120"/>
 <part name="R8" library="SparkFun-Resistors" deviceset="0.3OHM" device="-0805-1/8W-1%" value="10k"/>
