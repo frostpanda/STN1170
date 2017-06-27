@@ -3611,6 +3611,11 @@ ON VDD AND VSS</text>
 <wire x1="172.72" y1="81.28" x2="167.64" y2="81.28" width="0.1524" layer="91"/>
 <label x="167.64" y="81.28" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="6"/>
+<wire x1="114.3" y1="99.06" x2="109.22" y2="99.06" width="0.1524" layer="91"/>
+<label x="102.362" y="99.06" size="0.8128" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
