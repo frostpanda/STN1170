@@ -7087,6 +7087,33 @@ Details see: &lt;a href="http://katalog.we-online.de/en/led/WL-SMCW?m"&gt;http:/
 <rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
 <rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
 </package>
+<package name="B3U-WO-GT-WO-B">
+<description>B3U footprint&lt;br&gt;
+&lt;b&gt;UNTESTED&lt;/b&gt;</description>
+<wire x1="-1.5" y1="1.25" x2="1.5" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.5" y1="1.25" x2="1.5" y2="0.7" width="0.127" layer="51"/>
+<wire x1="1.5" y1="0.7" x2="1.5" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-0.7" x2="1.5" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-1.25" x2="-1.5" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-1.25" x2="-1.5" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-0.7" x2="-1.5" y2="0.7" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="0.7" x2="-1.5" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-2" y1="0.7" x2="-2" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="2" y1="0.7" x2="2" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="2" y1="-0.7" x2="1.5" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="2" y1="0.7" x2="1.5" y2="0.7" width="0.127" layer="51"/>
+<wire x1="-2" y1="0.7" x2="-1.5" y2="0.7" width="0.127" layer="51"/>
+<wire x1="-2" y1="-0.7" x2="-1.5" y2="-0.7" width="0.127" layer="51"/>
+<smd name="1" x="-1.85" y="0" dx="1.7" dy="1" layer="1" rot="R90"/>
+<smd name="2" x="1.85" y="0" dx="1.7" dy="1" layer="1" rot="R90"/>
+<circle x="0" y="0" radius="0.75" width="0.127" layer="51"/>
+<wire x1="1.2" y1="1.25" x2="1.2" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="1.2" y1="-1.25" x2="-1.2" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="-1.25" x2="-1.2" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="1.25" x2="1.2" y2="1.25" width="0.127" layer="21"/>
+<text x="-0.1" y="1.4" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-1.4" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="78XX">
@@ -7102,6 +7129,18 @@ Details see: &lt;a href="http://katalog.we-online.de/en/led/WL-SMCW?m"&gt;http:/
 <pin name="IN" x="-7.62" y="0" visible="off" length="short" direction="in"/>
 <pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="in" rot="R90"/>
 <pin name="OUT" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="SWITCH-MOMENTARY-2">
+<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST&lt;/h3&gt;
+&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;</description>
+<wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="1.905" y2="1.27" width="0.254" layer="94"/>
+<circle x="-2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
+<circle x="2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
+<text x="0" y="1.524" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.508" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="2"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -7171,6 +7210,25 @@ range.</description>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="IN" pad="3"/>
 <connect gate="G$1" pin="OUT" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="B3U" prefix="S" uservalue="yes">
+<description>Ultra-small-sized Tactile Switch&lt;br&gt;
+with High Contact Reliability:&lt;br&gt;
+1.2 × 3 × 2.5 mm (H × W ×D)</description>
+<gates>
+<gate name="G$1" symbol="SWITCH-MOMENTARY-2" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="B3U-WO-GT-WO-B">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7362,7 +7420,6 @@ range.</description>
 <part name="C9" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" value="0.1uF 25V"/>
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C12" library="prywatne" deviceset="EEE-1EA330WR" device=""/>
-<part name="J1" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
 <part name="J4" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
 <part name="D3" library="EAGLE-COLOR_LED-rev17b" deviceset="WL-SMCW" device="-150120BS75000-B"/>
 <part name="D8" library="EAGLE-COLOR_LED-rev17b" deviceset="WL-SMCW" device="-150120BS75000-B"/>
@@ -7379,6 +7436,9 @@ range.</description>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="R46" library="SparkFun-Resistors" deviceset="0.3OHM" device="-0805-1/8W-1%" value="1k"/>
+<part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="S1" library="Goodies" deviceset="B3U" device=""/>
+<part name="S2" library="Goodies" deviceset="B3U" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8977,26 +9037,28 @@ range.</description>
 <instances>
 <instance part="FRAME16" gate="G$1" x="5.08" y="5.08"/>
 <instance part="GND90" gate="1" x="175.26" y="53.34"/>
-<instance part="GND91" gate="1" x="165.1" y="53.34"/>
+<instance part="GND91" gate="1" x="185.42" y="53.34"/>
 <instance part="GND92" gate="1" x="109.22" y="53.34"/>
 <instance part="U16" gate="G$1" x="132.08" y="99.06"/>
 <instance part="GND18" gate="1" x="154.94" y="53.34"/>
-<instance part="C7" gate="G$1" x="165.1" y="76.2"/>
-<instance part="R1" gate="G$1" x="154.94" y="76.2" rot="R90"/>
-<instance part="R2" gate="G$1" x="185.42" y="86.36"/>
+<instance part="C7" gate="G$1" x="185.42" y="76.2"/>
+<instance part="R1" gate="G$1" x="154.94" y="78.74" rot="R90"/>
+<instance part="R2" gate="G$1" x="195.58" y="86.36"/>
 <instance part="R4" gate="G$1" x="165.1" y="96.52"/>
 <instance part="C8" gate="G$1" x="175.26" y="106.68"/>
-<instance part="J1" gate="G$1" x="142.24" y="63.5"/>
 <instance part="J4" gate="G$1" x="180.34" y="127" rot="R270"/>
 <instance part="D3" gate="G$1" x="185.42" y="96.52"/>
+<instance part="GND9" gate="1" x="165.1" y="53.34"/>
+<instance part="S1" gate="G$1" x="165.1" y="66.04" rot="R90"/>
+<instance part="S2" gate="G$1" x="154.94" y="66.04" rot="R90"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="3.3V" class="0">
 <segment>
-<label x="202.946" y="86.36" size="0.8128" layer="95" rot="R180" xref="yes"/>
-<wire x1="190.5" y1="86.36" x2="195.58" y2="86.36" width="0.1524" layer="91"/>
+<label x="213.106" y="86.36" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<wire x1="200.66" y1="86.36" x2="205.74" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -9035,7 +9097,7 @@ range.</description>
 </segment>
 <segment>
 <pinref part="GND91" gate="1" pin="GND"/>
-<wire x1="165.1" y1="55.88" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="55.88" x2="185.42" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -9045,21 +9107,29 @@ range.</description>
 <pinref part="U16" gate="G$1" pin="GND@2"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="63.5" x2="154.94" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="165.1" y1="60.96" x2="165.1" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="S2" gate="G$1" pin="1"/>
 <pinref part="GND18" gate="1" pin="GND"/>
-<wire x1="154.94" y1="63.5" x2="154.94" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="60.96" x2="154.94" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$39" class="0">
 <segment>
 <wire x1="149.86" y1="86.36" x2="165.1" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="86.36" x2="180.34" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="86.36" x2="165.1" y2="81.28" width="0.1524" layer="91"/>
-<junction x="165.1" y="86.36"/>
+<wire x1="165.1" y1="86.36" x2="185.42" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="86.36" x2="190.5" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="86.36" x2="185.42" y2="81.28" width="0.1524" layer="91"/>
+<junction x="185.42" y="86.36"/>
 <pinref part="U16" gate="G$1" pin="RST_N"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="71.12" x2="165.1" y2="86.36" width="0.1524" layer="91"/>
+<junction x="165.1" y="86.36"/>
+<pinref part="S1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="LED" class="0">
@@ -9074,7 +9144,7 @@ range.</description>
 <wire x1="149.86" y1="116.84" x2="154.94" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="U16" gate="G$1" pin="P2_0"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="154.94" y1="81.28" x2="154.94" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="83.82" x2="154.94" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="UART_RX" class="0">
@@ -9100,10 +9170,9 @@ range.</description>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="66.04" x2="154.94" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="154.94" y1="66.04" x2="154.94" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="71.12" x2="154.94" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="S2" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
