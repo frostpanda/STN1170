@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+Prototype of common OBD diagnostic board. 
 
-You can use the [editor on GitHub](https://github.com/frostpanda/STN1170/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Device uses STN1170 chip in QFTP package, form ScanTool company and it is compatible with ELM327, based on information, which can be found in datasheet about this integrated circuit. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Main assumption about this prototype to be a modular to lower the cost of the device, because only 3 samples can be acquired through ScanTool company, so prototype has two boards. One with STN1170 and necessary components and second one with transceivers, which are required for communication with proper protocols and OBD chip, but also contains wireless and wired communication. 
 
-### Markdown
+Wireless communication was planned RN4870 BLE module. But because of bad implementation (???) or module was broken I can not force him to work properly. In the end it lost MAC address and this is common for modules, based on IS187x Bluetooth LE ICs and the main reason for it was as Microchip support claim “Inappropriate module reset”, but I didn’t get answer for my question, when I asked about, how this module should be reset, to prevent such behavior in the future. Finally I decided for HM-13 module. Module is already implemented and I need to do more tweaking in revision 2 to push next revision. For now module is working on revision 1 prototype board.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Wired communication with PC uses CP2102N UART to Bridge ICs. His cost is lower than FTDI chips and has a lot possible ways to configure it, beginning from drivers, ending at ICs, but soldering it without hot air station is not easy task to do, but it can be done with some patience.
 
-```markdown
-Syntax highlighted code block
+Checked protocols:
+CAN 
+K-LINE
+L-LINE
 
-# Header 1
-## Header 2
-### Header 3
+Basic connection tested with:
+Fiat Punto MK2 (MultiEcuScan) 
+Opel Vectra C 
+Citroen DS4 
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/frostpanda/STN1170/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Galerry: [a link](https://imgur.com/a/UtiDV)
+Video: [a link](https://youtu.be/GFeOGx49xKc)
