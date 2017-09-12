@@ -18,6 +18,6 @@ Fiat Punto MK2 (MultiEcuScan)
 Opel Vectra C 
 Citroen DS4 
 
-Galerry: [a link](https://imgur.com/a/UtiDV){:target="_blank"}
+Galerry: [a link](https://imgur.com/a/UtiDV)
 
-Video: [a link](https://youtu.be/GFeOGx49xKc){:target="_blank"}
+Video: [a link](https://youtu.be/GFeOGx49xKc)
