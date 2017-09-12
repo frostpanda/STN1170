@@ -22,6 +22,6 @@ Basic connection tested with:
 - Opel Vectra C 
 - Citroen DS4 
 
-Galerry: https://imgur.com/a/UtiDV
+Gallery: https://imgur.com/a/UtiDV
 
 Video: https://youtu.be/GFeOGx49xKc
