@@ -9,14 +9,23 @@ Wireless communication was planned RN4870 BLE module. But because of bad impleme
 Wired communication with PC uses CP2102N UART to Bridge ICs. His cost is lower than FTDI chips and has a lot possible ways to configure it, beginning from drivers, ending at ICs, but soldering it without hot air station is not easy task to do, but it can be done with some patience.
 
 Checked protocols:
+
 CAN 
+
 K-LINE
+
 L-LINE
 
+
 Basic connection tested with:
+
 Fiat Punto MK2 (MultiEcuScan) 
+
 Opel Vectra C 
+
 Citroen DS4 
+
+
 
 Galerry: [a link](https://imgur.com/a/UtiDV)
 
