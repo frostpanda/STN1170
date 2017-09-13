@@ -11,7 +11,7 @@ Wired communication with PC uses CP2102N UART to Bridge ICs. His cost is lower t
 Checked protocols:
 - [x] HS-CAN 
 - [ ] MS-CAN 
-- [ ] SW-CAN 
+- [x] SW-CAN 
 - [x] K-LINE
 - [x] L-LINE
 - [ ] VPW
