@@ -17,10 +17,10 @@ Checked protocols:
 - [ ] VPW
 - [ ] PWM
 
-Basic connection tested with:
-- Fiat Punto MK2 (MultiEcuScan) 
-- Opel Vectra C 
-- Citroen DS4 
+Basic connection tested on standard OBD2 connector pinout:
+- Fiat Punto MK2 (CAN, K-LINE) 
+- Opel Vectra C (HS-CAN, SW-CAN)
+- Citroen DS4 (CAN)
 
 Gallery: https://imgur.com/a/UtiDV
 
