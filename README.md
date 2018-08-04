@@ -8,19 +8,22 @@ Wireless communication was planned RN4870 BLE module. But because of bad impleme
 
 Wired communication with PC uses CP2102N UART to Bridge ICs. His cost is lower than FTDI chips and has a lot possible ways to configure it, beginning from drivers, ending at ICs, but soldering it without hot air station is not easy task to do, but it can be done with some patience.
 
+After success of 1st prototype (working!), second was made. On the 2nd prototype everything was moved to the one 2 layers PCB board, with dimension of 4cm x 6cm (I will try to make it even smaller!, but I am concern about EMC problem with it and this could require use 4 layer PCB). Some of components are on the bottom side of the board. 
+
 Checked protocols:
 - [x] HS-CAN 
-- [ ] MS-CAN 
-- [ ] SW-CAN 
+- [x] MS-CAN 
+- [x] SW-CAN 
 - [x] K-LINE
 - [x] L-LINE
-- [ ] VPW
+- [ ] VPW 
 - [ ] PWM
 
 Basic connection tested with:
-- Fiat Punto MK2 (MultiEcuScan) 
-- Opel Vectra C 
+- Fiat Punto MK2 1.2 8V
+- Opel Vectra C 1.8 16V 122KM 
 - Citroen DS4 
+- Mazda 3 BK 1.6 105KM MZR 2008
 
 Gallery: https://imgur.com/a/UtiDV
 
