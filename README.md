@@ -1,4 +1,4 @@
-Prototype of common OBD diagnostic board. 
+<h2><b>Prototype of common OBD diagnostic board </b></h2>
 
 Device uses STN1170 chip in QFTP package, form ScanTool company and it is compatible with ELM327, based on information, which can be found in datasheet about this integrated circuit. 
 
