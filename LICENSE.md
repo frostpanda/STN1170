@@ -1,6 +1,6 @@
 <h1><b>License Information</b></h1>
 
-<b>Hardware</b> is released under <b><a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Share-alike 4.0 International.</a><b>
+<b>Hardware</b> is released under <b><a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Share-alike 4.0 International.</a></b>
 
 <h3><b>Note:</b></h3> 
 This is a human-readable summary of (and not a substitute for) the license.
