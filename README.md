@@ -11,19 +11,19 @@ Wired communication with PC uses CP2102N UART to Bridge ICs. His cost is lower t
 After success of 1st prototype (working!), second was made. On the 2nd prototype everything was moved to the one 2 layers PCB board, with dimension of 4cm x 6cm (I will try to make it even smaller!, but I am concern about EMC problem with it and this could require use 4 layer PCB). Some of components are on the bottom side of the board. 
 
 Checked protocols:
-- [x] HS-CAN 
-- [x] MS-CAN 
-- [x] SW-CAN 
+- [x] High Speed CAN
+- [x] Medium Speed CAN 
+- [x] Single Wire CAN 
 - [x] K-LINE
 - [x] L-LINE
 - [ ] VPW 
 - [ ] PWM
 
 Basic connection tested with:
-- Fiat Punto MK2 1.2 8V
+- Fiat Punto MK2 1.2 8V (MultiEcuScan)
 - Opel Vectra C 1.8 16V 122KM 
 - Citroen DS4 
-- Mazda 3 BK 1.6 105KM MZR 2008
+- Mazda 3 BK 1.6 105KM Z6 2008 (ForScan)
 
 Gallery: https://imgur.com/a/UtiDV
 
